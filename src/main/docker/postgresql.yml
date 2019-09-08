@@ -1,0 +1,11 @@
+version: '2'
+services:
+  bank-postgresql:
+    image: postgres:11.4
+    # volumes:
+    #     - ~/volumes/jhipster/BANK/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=BANK
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
